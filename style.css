@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*
+{
+    font-family: 'Dancing Script', cursive; 
+}
+
+body{
+    background-image: url(does-anyone-have-a-cool-kingdom-wallpaper-1920x1080-rkingdom.png);
+    padding: 0;
+    margin-left: 110px;
+    box-sizing: border-box;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+#app{
+    background-color: black;
+    width: 400px;
+    min-height: 600px;
+}
+
+.row{
+    display: flex;
+    height: 100px;
+}
+
+input[type="text"], button{
+    flex: 1;
+    border:none;
+    outline: none;
+    outline: none;
+}
+
+input[type="text"]{  
+    background-color: rgba(39, 32, 32, 0);
+    color: white;
+    font-size: 1.7em;
+    padding: 0 20px;
+}
+
+button{
+    background-color: rgb(39, 32, 32);
+    font-size: 1.2em;
+    color: white;
+}
+
+button:hover{
+    background-color: rgba(39, 32, 32, 0);
+    cursor: pointer;
+}
+
+.special{
+    flex: 2;
+}
