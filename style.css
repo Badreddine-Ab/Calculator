@@ -7,6 +7,9 @@
 
 body{
     background-image: url(does-anyone-have-a-cool-kingdom-wallpaper-1920x1080-rkingdom.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
     padding: 0;
     margin-left: 110px;
     box-sizing: border-box;
@@ -24,6 +27,10 @@ body{
 .row{
     display: flex;
     height: 100px;
+}
+
+img{
+    width: 5vw;
 }
 
 input[type="text"], button{

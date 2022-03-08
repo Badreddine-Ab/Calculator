@@ -3,8 +3,11 @@
 var screen = document.getElementById("screen");
 var numChar; //totoal of typed characters
 var currentChar, previousChar; //store previous and current typed charchters
-var operations = ['+', '-' , '*' , '/'];
-//----------------------------------functions -----------------------//
+var operations = ['+', '-' , '*' , '/' ];
+var errorMsg = 'la impossi 🤯🙅🏼‍♀️';
+
+
+//-----------------------------functions -----------------------//
 
 function clearScreen(){
     screen.value = "";
@@ -18,7 +21,11 @@ function display(c){
 }
 
 function calculate(){
-    screen.value = eval(screen.value);
+    try {
+        screen.value = eval(screen.value);
+    } catch (error) {
+        screen.value = errorMsg ;
+    }
 }
 
 function getPreviousChar(){
@@ -27,7 +34,7 @@ function getPreviousChar(){
 }
 
 function checkSyntax(){
-    if(operations.includes(currentChar) && numChar == 1 ) {
+    if(operations.includes(currentChar) && numChar == 1 && currentChar != "-" ) {
         removeChar();
     }
     if(operations.includes(previousChar) && operations.includes(currentChar)){
@@ -38,6 +45,7 @@ function checkSyntax(){
         }
         
     }
+    
 }
 
 function overwrite(){
