@@ -3,11 +3,15 @@
 var screen = document.getElementById("screen");
 var numChar; //totoal of typed characters
 var currentChar, previousChar; //store previous and current typed charchters
-var operations = ['+', '-' , '*' , '/' ];
+var operations = ['+', '-' , '*' , '/' , '%' ];
 var errorMsg = 'la impossi 🤯🙅🏼‍♀️';
 
 
+
 //-----------------------------functions -----------------------//
+
+
+
 
 function clearScreen(){
     screen.value = "";
@@ -28,13 +32,14 @@ function calculate(){
     }
 }
 
+
 function getPreviousChar(){
     previousChar = screen.value.substring(numChar-2,numChar-1);
     checkSyntax();
 }
 
 function checkSyntax(){
-    if(operations.includes(currentChar) && numChar == 1 && currentChar != "-" ) {
+    if(operations.includes(currentChar) && numChar == 1 && currentChar != '-' ) {
         removeChar();
     }
     if(operations.includes(previousChar) && operations.includes(currentChar)){
