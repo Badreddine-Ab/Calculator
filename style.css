@@ -1,63 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-*
-{
-    font-family: 'Dancing Script', cursive; 
-}
-
-body{
-    background-image: url(does-anyone-have-a-cool-kingdom-wallpaper-1920x1080-rkingdom.png);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+*{
     padding: 0;
-    margin-left: 110px;
+    margin: 0;
     box-sizing: border-box;
-    display: flex;
+}
+
+section{
+    background-image: url(4b4434b70a6aa44cbbc5edba621d67cd.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
-    align-items: center;
-}
-
-#app{
-    background-color: black;
-    width: 400px;
-    min-height: 600px;
-}
-
-.row{
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    width: 90%;
+    max-width: 400px;
+    background-color: 	rgb(255, 192, 203);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.display{
+    background-color: white;
     height: 100px;
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
 }
 
-img{
-    width: 5vw;
+.display-1{
+    opacity: .4;
+    font-size: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+.temp-result{
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    font-size: 20px;
+    opacity: .4 ;
 }
 
-input[type="text"], button{
-    flex: 1;
-    border:none;
-    outline: none;
-    outline: none;
-}
 
-input[type="text"]{  
-    background-color: rgba(39, 32, 32, 0);
+.all_buttons{
     color: white;
-    font-size: 1.7em;
-    padding: 0 20px;
+    display: grid;
+    grid-template: repeat(4,1fr)/repeat(4, 1fr);
 }
 
-button{
-    background-color: rgb(39, 32, 32);
-    font-size: 1.2em;
-    color: white;
-}
-
-button:hover{
-    background-color: rgba(39, 32, 32, 0);
+.button{
+    border: .5px solid;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
     cursor: pointer;
 }
+.button:hover{
+    background-color: rgb(255, 182, 193);
+}
 
-.special{
-    flex: 2;
+.btn-0{
+    grid-column: 1/3;
 }

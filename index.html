@@ -5,51 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Badr's  calculator</title>
+    <title>Document</title>
 </head>
 <body>
-    
-    <div id="app">
-        <div class="row">
-            <input type="text" name="" id="screen" readonly>
+    <section>
+        <div class="container">
+            <div class="display">
+                <div class="display-1">0</div>
+                <div class="display-2">0</div>
+                <div class="temp-result">0</div>
+            </div>
+            <div class="all_buttons">
+                <div class="button all-clear">C</div>
+                <div class="button last-entity-clear">CE</div>
+                <div class="button operation">%</div>
+                <div class="button operation">/</div>
+                <div class="button number">7</div>
+                <div class="button number">8</div>
+                <div class="button number">9</div>
+                <div class="button operation">X</div>
+                <div class="button number">4</div>
+                <div class="button number">5</div>
+                <div class="button number">6</div>
+                <div class="button operation">-</div>
+                <div class="button number">1</div>
+                <div class="button number">2</div>
+                <div class="button number">3</div>
+                <div class="button operation">+</div>
+                <div class="button number btn-0">0</div>
+                <div class="button number dot">.</div>
+                <div class="button equal">=</div>
+            </div>
         </div>
-
-        <div class="row">
-            <button onclick="clearScreen()">C</button>
-            <button onclick="">+/-</button>
-            <button onclick="display('%')">%</button>
-            <button onclick="display('/')">/</button>
-        </div>
-
-        <div class="row">
-            <button onclick="display(7)">7</button>
-            <button onclick="display(8)">8</button>
-            <button onclick="display(9)">9</button>
-            <button onclick="display('*')">*</button>
-        </div>
-
-        <div class="row">
-            <button onclick="display(4)">4</button>
-            <button onclick="display(5)">5</button>
-            <button onclick="display(6)">6</button>
-            <button onclick="display('-')">-</button>
-        </div>
-
-        <div class="row">
-            <button onclick="display(1)">1</button>
-            <button onclick="display(2)">2</button>
-            <button onclick="display(3)">3</button>
-            <button onclick="display('+')">+</button>
-        </div>
-
-        <div class="row">
-            <button onclick="display(0)" class="special">0</button>
-            <button onclick="display('.')">.</button>
-            <button onclick="calculate()">=</button>
-        </div>
-
-    </div>
-
-    <script src="calculator.js"></script>
+    </section>
+    <script src="./index.js"></script>
 </body>
 </html>
