@@ -28,7 +28,7 @@ numbersE1.forEach( number => {
 
 operationE1.forEach( operation => {
     operation.addEventListener('click', (e)=>{
-        if(!dis2Num) result;
+        if(!dis2Num) return;
         haveDot= false;
         const operationName = e.target.innerText;
         if(dis1Num && dis2Num && lastOperation){
